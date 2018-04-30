@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nytimes.com/svc/books/v3/lists/combined-print-and-e-book-fiction.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin15.6.0 x86_64) ruby/2.4.1p111
+      Api-Key:
+      - "<api_key>"
+      Host:
+      - api.nytimes.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Accept, Content-Type, X-Forwarded-For, X-Prototype-Version, X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Length, X-JSON
+      Age:
+      - '291'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 30 Apr 2018 22:29:09 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Vary:
+      - Origin
+      Via:
+      - kong/0.9.5
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      X-Kong-Proxy-Latency:
+      - '5'
+      X-Kong-Upstream-Latency:
+      - '3'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Limit-Second:
+      - '5'
+      X-Ratelimit-Remaining-Day:
+      - '985'
+      X-Ratelimit-Remaining-Second:
+      - '4'
+      X-Varnish:
+      - 105857180 106242062
+      Content-Length:
+      - '20637'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","copyright":"Copyright (c) 2018 The New York Times Company.  All
+        Rights Reserved.","num_results":15,"last_modified":"2018-04-26T13:38:02-04:00","results":{"list_name":"Combined
+        Print and E-Book Fiction","list_name_encoded":"combined-print-and-e-book-fiction","bestsellers_date":"2018-04-21","published_date":"2018-05-06","published_date_description":"latest","next_published_date":"","previous_published_date":"2018-04-29","display_name":"Combined
+        Print & E-Book Fiction","normal_list_ends_at":15,"updated":"WEEKLY","books":[{"rank":1,"rank_last_week":0,"weeks_on_list":1,"asterisk":0,"dagger":0,"primary_isbn10":"1538761378","primary_isbn13":"9781538761373","publisher":"Grand
+        Central","description":"Amos Decker, known as the Memory Man, puts his talents
+        toward solving a string of murders in a Rust Belt town.","price":0,"title":"THE
+        FALLEN","author":"David Baldacci","contributor":"by David Baldacci","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9781538761397.jpg","book_image_width":328,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Fallen-Memory-Man-David-Baldacci-ebook\/dp\/B074M62RVY?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"1538761394","isbn13":"9781538761397"},{"isbn10":"1538763087","isbn13":"9781538763087"},{"isbn10":"1538761378","isbn13":"9781538761373"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781538761373?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781538761373"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Fallen-Memory-Man-David-Baldacci-ebook\/dp\/B074M62RVY?tag=NYTBS-20"}]},{"rank":2,"rank_last_week":5,"weeks_on_list":22,"asterisk":0,"dagger":0,"primary_isbn10":"0307887448","primary_isbn13":"9780307887443","publisher":"Broadway","description":"It\u2019s
+        2044, life on a resource-depleted Earth is grim, and the key to a vast fortune
+        is hidden in a virtual-reality world.","price":0,"title":"READY PLAYER ONE","author":"Ernest
+        Cline","contributor":"by Ernest Cline","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780307887443.jpg","book_image_width":317,"book_image_height":495,"amazon_product_url":"http:\/\/www.amazon.com\/Ready-Player-One-Ernest-Cline\/dp\/030788743X?tag=NYTBS-20","age_group":"","book_review_link":"https:\/\/www.nytimes.com\/2011\/08\/15\/books\/ready-player-one-by-ernest-cline-review.html","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"030788743X","isbn13":"9780307887436"},{"isbn10":"0307887448","isbn13":"9780307887443"},{"isbn10":"0307887456","isbn13":"9780307887450"},{"isbn10":"1524755613","isbn13":"9781524755614"},{"isbn10":"1524763284","isbn13":"9781524763282"},{"isbn10":"0606264124","isbn13":"9780606264129"},{"isbn10":"0804190135","isbn13":"9780804190138"},{"isbn10":"0804190143","isbn13":"9780804190145"},{"isbn10":"0307913147","isbn13":"9780307913142"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9780307887443?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780307887443"},{"name":"Amazon","url":"http:\/\/www.amazon.com\/Ready-Player-One-Ernest-Cline\/dp\/030788743X?tag=NYTBS-20"}]},{"rank":3,"rank_last_week":4,"weeks_on_list":2,"asterisk":0,"dagger":0,"primary_isbn10":"1250099676","primary_isbn13":"9781250099679","publisher":"St.
+        Martin''s","description":"A woman marries a widower and reunites with her
+        teenage daughter who is murdered soon after, and the husband is put on trial
+        for it.","price":0,"title":"AFTER ANNA","author":"Lisa Scottoline","contributor":"by
+        Lisa Scottoline","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9781250099679.jpg","book_image_width":326,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/After-Anna-Lisa-Scottoline-ebook\/dp\/B073NZQ28Z?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"125009965X","isbn13":"9781250099655"},{"isbn10":"1250185238","isbn13":"9781250185235"},{"isbn10":"1250099676","isbn13":"9781250099679"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781250099679?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781250099679"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/After-Anna-Lisa-Scottoline-ebook\/dp\/B073NZQ28Z?tag=NYTBS-20"}]},{"rank":4,"rank_last_week":7,"weeks_on_list":20,"asterisk":0,"dagger":0,"primary_isbn10":"1524797154","primary_isbn13":"9781524797157","publisher":"Doubleday","description":"A
+        search for stolen rare manuscripts leads to a Florida island.","price":0,"title":"CAMINO
+        ISLAND","author":"John Grisham","contributor":"by John Grisham","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780385543057.jpg","book_image_width":326,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Camino-Island-Novel-John-Grisham-ebook\/dp\/B01N2ABE60?tag=NYTBS-20","age_group":"","book_review_link":"https:\/\/www.nytimes.com\/2017\/06\/12\/books\/review\/camino-island-john-grisham.html","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0385543026","isbn13":"9780385543026"},{"isbn10":"0385543050","isbn13":"9780385543057"},{"isbn10":"0385543069","isbn13":"9780385543064"},{"isbn10":"1524797146","isbn13":"9781524797140"},{"isbn10":"1524797154","isbn13":"9781524797157"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781524797157?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781524797157"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Camino-Island-Novel-John-Grisham-ebook\/dp\/B01N2ABE60?tag=NYTBS-20"}]},{"rank":5,"rank_last_week":10,"weeks_on_list":11,"asterisk":0,"dagger":0,"primary_isbn10":"125016561X","primary_isbn13":"9781250165619","publisher":"St.
+        Martin''s","description":"A former prisoner of war returns from Vietnam and
+        moves his family to Alaska, where they face tough conditions.","price":0,"title":"THE
+        GREAT ALONE","author":"Kristin Hannah","contributor":"by Kristin Hannah","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9781250165619.jpg","book_image_width":326,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Great-Alone-Novel-Kristin-Hannah-ebook\/dp\/B06Y5WRS2C?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0312577230","isbn13":"9780312577230"},{"isbn10":"125016561X","isbn13":"9781250165619"},{"isbn10":"1683247000","isbn13":"9781683247005"},{"isbn10":"1427212686","isbn13":"9781427212689"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781250165619?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781250165619"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Great-Alone-Novel-Kristin-Hannah-ebook\/dp\/B06Y5WRS2C?tag=NYTBS-20"}]},{"rank":6,"rank_last_week":0,"weeks_on_list":1,"asterisk":0,"dagger":0,"primary_isbn10":"1488023557","primary_isbn13":"9781488023552","publisher":"MIRA","description":"The
+        third book in the Sullivan\u2019s Crossing series. Four siblings try to accept
+        one another as adults.","price":0,"title":"THE FAMILY GATHERING","author":"Ron
+        Carr","contributor":"by Robyn Carr","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9781488023552.jpg","book_image_width":329,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Family-Gathering-Sullivans-Crossing-ebook\/dp\/B076ZPMD44?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"1488023557","isbn13":"9781488023552"},{"isbn10":"0778330761","isbn13":"9780778330769"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781488023552?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781488023552"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Family-Gathering-Sullivans-Crossing-ebook\/dp\/B076ZPMD44?tag=NYTBS-20"}]},{"rank":7,"rank_last_week":11,"weeks_on_list":26,"asterisk":0,"dagger":0,"primary_isbn10":"0735224307","primary_isbn13":"9780735224308","publisher":"Penguin
+        Press","description":"An artist upends a quiet town outside Cleveland.","price":0,"title":"LITTLE
+        FIRES EVERYWHERE","author":"Celeste Ng","contributor":"by Celeste Ng","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780735224308.jpg","book_image_width":328,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Little-Fires-Everywhere-Celeste-Ng-ebook\/dp\/B01N4VW75U?tag=NYTBS-20","age_group":"","book_review_link":"https:\/\/www.nytimes.com\/2017\/09\/25\/books\/review\/little-fires-everywhere-celeste-ng.html","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0735224293","isbn13":"9780735224292"},{"isbn10":"0735224307","isbn13":"9780735224308"},{"isbn10":"0525498079","isbn13":"9780525498070"},{"isbn10":"0525498060","isbn13":"9780525498063"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9780735224308?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780735224308"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Little-Fires-Everywhere-Celeste-Ng-ebook\/dp\/B01N4VW75U?tag=NYTBS-20"}]},{"rank":8,"rank_last_week":15,"weeks_on_list":30,"asterisk":0,"dagger":0,"primary_isbn10":"0425284697","primary_isbn13":"9780425284698","publisher":"Ballantine","description":"A
+        South Carolina lawyer learns about the questionable practices of a Tennessee
+        orphanage.","price":0,"title":"BEFORE WE WERE YOURS","author":"Lisa Wingate","contributor":"by
+        Lisa Wingate","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780425284681.jpg","book_image_width":330,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Before-We-Were-Yours-Novel\/dp\/0425284689?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0425284689","isbn13":"9780425284681"},{"isbn10":"0425284697","isbn13":"9780425284698"},{"isbn10":"1524797308","isbn13":"9781524797300"},{"isbn10":"1432839128","isbn13":"9781432839123"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9780425284698?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780425284698"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Before-We-Were-Yours-Novel\/dp\/0425284689?tag=NYTBS-20"}]},{"rank":9,"rank_last_week":9,"weeks_on_list":3,"asterisk":0,"dagger":0,"primary_isbn10":"1501171690","primary_isbn13":"9781501171697","publisher":"Simon
+        & Schuster","description":"A high school guidance counselor tries to uncover
+        the identity of her sister\u2019s murderer.","price":0,"title":"I''VE GOT
+        MY EYES ON YOU","author":"Mary Higgins Clark","contributor":"by Mary Higgins
+        Clark","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9781501171697.jpg","book_image_width":328,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Ive-Got-My-Eyes-You-ebook\/dp\/B074ZWSKZP?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"1501171682","isbn13":"9781501171680"},{"isbn10":"198210158X","isbn13":"9781982101589"},{"isbn10":"1501171690","isbn13":"9781501171697"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781501171697?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781501171697"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Ive-Got-My-Eyes-You-ebook\/dp\/B074ZWSKZP?tag=NYTBS-20"}]},{"rank":10,"rank_last_week":0,"weeks_on_list":1,"asterisk":0,"dagger":0,"primary_isbn10":"0062433970","primary_isbn13":"9780062433978","publisher":"Morrow","description":"In
+        the summer of 1947, a woman and an Air Force general attract the attention
+        of a San Francisco bartender while a suspicious flying object is spotted near
+        the coast.","price":0,"title":"NOIR","author":"Christopher Moore","contributor":"by
+        Christopher Moore","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780062433978.jpg","book_image_width":321,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Noir-Novel-Christopher-Moore\/dp\/0062433970?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0062433970","isbn13":"9780062433978"},{"isbn10":"0062858157","isbn13":"9780062858153"},{"isbn10":"0062434004","isbn13":"9780062434005"},{"isbn10":"0062791443","isbn13":"9780062791443"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9780062433978?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780062433978"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Noir-Novel-Christopher-Moore\/dp\/0062433970?tag=NYTBS-20"}]},{"rank":11,"rank_last_week":0,"weeks_on_list":1,"asterisk":0,"dagger":0,"primary_isbn10":"1501154664","primary_isbn13":"9781501154669","publisher":"Atria","description":"Ten
+        years after her daughter disappears, a woman tries to get her life in order
+        but remains haunted by unanswered questions.","price":0,"title":"THEN SHE
+        WAS GONE","author":"Lisa Jewell","contributor":"by Lisa Jewell","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9781501154669.jpg","book_image_width":328,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Then-She-Was-Gone-Novel-ebook\/dp\/B074MDD3H6?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"1501154648","isbn13":"9781501154645"},{"isbn10":"1501154664","isbn13":"9781501154669"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781501154669?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781501154669"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Then-She-Was-Gone-Novel-ebook\/dp\/B074MDD3H6?tag=NYTBS-20"}]},{"rank":12,"rank_last_week":2,"weeks_on_list":2,"asterisk":0,"dagger":0,"primary_isbn10":"073521722X","primary_isbn13":"9780735217225","publisher":"Putnam","description":"Stone
+        Barrington searches for the person who plotted to kill the woman behind a
+        cutting-edge software startup.","price":0,"title":"SHOOT FIRST","author":"Stuart
+        Woods","contributor":"by Stuart Woods","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780735217225.jpg","book_image_width":328,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Shoot-First-Stone-Barrington-Novel-ebook\/dp\/B074667S5M?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0735217203","isbn13":"9780735217201"},{"isbn10":"073521722X","isbn13":"9780735217225"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9780735217225?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780735217225"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Shoot-First-Stone-Barrington-Novel-ebook\/dp\/B074667S5M?tag=NYTBS-20"}]},{"rank":13,"rank_last_week":14,"weeks_on_list":5,"asterisk":0,"dagger":0,"primary_isbn10":"1101883960","primary_isbn13":"9781101883969","publisher":"Delacorte","description":"The
+        author Alexandra Winslow, writing under the pseudonym Alexander Green, creates
+        a double life that isolates her.","price":0,"title":"THE RIGHT TIME","author":"Danielle
+        Steel","contributor":"by Danielle Steel","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9781101883952.jpg","book_image_width":327,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Right-Time-Novel-Danielle-Steel-ebook\/dp\/B01MQSGA26?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"1101883944","isbn13":"9781101883945"},{"isbn10":"1101883952","isbn13":"9781101883952"},{"isbn10":"1101883960","isbn13":"9781101883969"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9781101883969?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781101883969"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Right-Time-Novel-Danielle-Steel-ebook\/dp\/B01MQSGA26?tag=NYTBS-20"}]},{"rank":14,"rank_last_week":0,"weeks_on_list":15,"asterisk":0,"dagger":0,"primary_isbn10":"0062678418","primary_isbn13":"9780062678416","publisher":"Morrow","description":"A
+        recluse who drinks heavily and takes prescription drugs may have witnessed
+        a crime across from her Harlem townhouse.","price":0,"title":"THE WOMAN IN
+        THE WINDOW","author":"AJ Finn","contributor":"by A.J. Finn","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780062678416.jpg","book_image_width":330,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Woman-Window-Novel-J-Finn\/dp\/0062678418?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0062678418","isbn13":"9780062678416"},{"isbn10":"0062678442","isbn13":"9780062678447"},{"isbn10":"0062678434","isbn13":"9780062678430"},{"isbn10":"0062801953","isbn13":"9780062801951"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9780062678416?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780062678416"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Woman-Window-Novel-J-Finn\/dp\/0062678418?tag=NYTBS-20"}]},{"rank":15,"rank_last_week":13,"weeks_on_list":4,"asterisk":0,"dagger":0,"primary_isbn10":"0316395587","primary_isbn13":"9780316395588","publisher":"Little,
+        Brown","description":"The fifth book in the NYPD Red series. Detectives Zach
+        Jordan and Kylie MacDonald investigate the death of a documentary filmmaker
+        and an explosion at a charity benefit.","price":0,"title":"RED ALERT","author":"James
+        Patterson and Marshall Karp","contributor":"by James Patterson and Marshall
+        Karp","contributor_note":"","book_image":"https:\/\/s1.nyt.com\/du\/books\/images\/9780316395588.jpg","book_image_width":319,"book_image_height":495,"amazon_product_url":"https:\/\/www.amazon.com\/Red-Alert-NYPD-Mystery-ebook\/dp\/B01GQIY9JW?tag=NYTBS-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"0316395447","isbn13":"9780316395441"},{"isbn10":"0316395560","isbn13":"9780316395564"},{"isbn10":"0316395587","isbn13":"9780316395588"}],"buy_links":[{"name":"Local
+        Booksellers","url":"http:\/\/www.indiebound.org\/book\/9780316395588?aff=NYT"},{"name":"Barnes
+        and Noble","url":"http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780316395588"},{"name":"Amazon","url":"https:\/\/www.amazon.com\/Red-Alert-NYPD-Mystery-ebook\/dp\/B01GQIY9JW?tag=NYTBS-20"}]}],"corrections":[]}}'
+    http_version: 
+  recorded_at: Mon, 30 Apr 2018 22:29:09 GMT
+recorded_with: VCR 4.0.0

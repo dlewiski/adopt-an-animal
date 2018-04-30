@@ -54,6 +54,8 @@ group :development, :test do
   gem 'capybara'
   gem 'simplecov', require: false
   gem 'dotenv-rails'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do

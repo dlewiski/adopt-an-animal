@@ -1,5 +1,5 @@
-class News
-  def get_books
+class Bestseller
+  def self.get_books
     # binding.pry
     # response = RestClient::Request.execute(
     # method: :get,
