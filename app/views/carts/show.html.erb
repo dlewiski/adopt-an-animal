@@ -3,7 +3,7 @@
     <p><%= item.product.name %> | <%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
     <p> Unit Price: <%= number_to_currency item.product.price %> | Quantity: <%= item.quantity %> | Total Price: <%= number_to_currency (item.product.price * item.quantity) %></p>
   <% end %>
-  <p>Your Total: <%= number_to_currency current_order.total_price %></p>
+  <p>Your Total: <%= number_to_currency current_order.totalPrice %></p>
 <% else %>
   <p>Your shopping cart is empty.</p>
 <% end %>
