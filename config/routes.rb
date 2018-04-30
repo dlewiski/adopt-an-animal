@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resource :cart, only: [:show]
 
+  resources :news, only: [:index]
+
   resources :products
 
   resources :order_items do
