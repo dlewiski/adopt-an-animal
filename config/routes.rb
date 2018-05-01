@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :products
 
+  resources :charges
+
   resources :order_items do
     resources :orders
   end
