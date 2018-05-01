@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
   def new
     @order = current_order
+    @order_items = @order.order_items
   end
 
   def create
@@ -22,5 +23,10 @@ class ChargesController < ApplicationController
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to new_charge_path
+  end
+
+  def destroy
+    current_order.destroy
+    redirect_to products_path
   end
 end

@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
   resources :charges
 
-  resources :order_items do
-    resources :orders
+  resources :orders do
+    resources :order_items
   end
 
   # resources :accounts
