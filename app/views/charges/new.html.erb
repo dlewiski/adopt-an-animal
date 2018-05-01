@@ -16,6 +16,7 @@
           data-amount="<%= current_order.totalPrice * 100 %>"
           data-zip-code="true"
           data-locale="auto"></script>
+          <%= link_to "DELETE", order_item_order_path(current_order.order_items, current_order), :data => {:method => "delete"} %>
 <% end %>
 
 <%= link_to "Return to Product List", products_path %>
