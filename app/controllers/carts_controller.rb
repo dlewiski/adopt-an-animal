@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
 
   def show
+    sleep 2
     @order_items = current_order.order_items
   end
 
