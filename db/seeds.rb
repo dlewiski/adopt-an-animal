@@ -1,4 +1,5 @@
 Product.destroy_all
+Shirt.destroy_all
 
 50.times do |i|
   @name = Faker::Pokemon.name
@@ -7,4 +8,11 @@ Product.destroy_all
   Product.create!(name: @name, price: @price, description: @description)
 end
 
+20.times do |i|
+  @name = Faker::Pokemon.name
+  @sold = Faker::Boolean.boolean(0.5)
+  Shirt.create!(name: @name, sold: @sold)
+end
+
 p "Created #{Product.count} products"
+p "Created #{Shirt.count} shirts"

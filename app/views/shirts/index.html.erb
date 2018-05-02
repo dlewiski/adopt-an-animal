@@ -1,0 +1,20 @@
+<%= link_to "ADD SHIRT", new_shirt_path, id: "new_shirt", remote: true %>
+<hr>
+<% if @shirts.any? %>
+  <div id="for_sale">
+    <h4>FOR SALE</h4>
+    <% @shirts.each do |shirt| %>
+      <% if shirt.sold == false %>
+        <p><%= shirt.name %> <%= check_box("shirt", "sold") %></p>
+      <% end %>
+    <% end %>
+  </div>
+  <hr>
+  <h4>SOLD</h4>
+  <% @shirts.each do |shirt| %>
+    <% if shirt.sold == true %>
+      <p><%= shirt.name %></p>
+    <% end %>
+  <% end %>
+
+<% end %>
