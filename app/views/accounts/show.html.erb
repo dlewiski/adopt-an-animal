@@ -1,0 +1,8 @@
+Hello. This is your account id.
+<%= current_account.id %><br>
+
+<% @orders.each do |order| %>
+  <% if order.account_id == current_account.id %>
+    $<%= order.totalPrice %><br>
+  <% end %>
+<% end %>

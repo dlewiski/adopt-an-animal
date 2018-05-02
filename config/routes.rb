@@ -12,11 +12,12 @@ Rails.application.routes.draw do
 
   resources :charges
 
+  resources :accounts
+
   resources :order_items do
     resources :orders
   end
 
-  # resources :accounts
 
 
 end

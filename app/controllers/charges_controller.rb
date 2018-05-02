@@ -18,6 +18,8 @@ class ChargesController < ApplicationController
       :description => 'Rails Stripe customer',
       :currency    => 'usd'
     )
+    
+    reset_session
 
   rescue Stripe::CardError => e
     flash[:error] = e.message

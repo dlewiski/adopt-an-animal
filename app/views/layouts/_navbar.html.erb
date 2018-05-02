@@ -8,7 +8,7 @@
       <ul class="nav navbar-nav navbar-left">
         <% if current_user %>
          <li><%= link_to "Sign out", '/users/sign_out', method: 'delete' %></li>
-         <li><%= link_to "Hi, #{current_user.email}", "/"%></li>
+         <li><%= link_to "Hi, #{current_user.email}", account_path(current_account)%></li>
         <% else %>
          <li><%= link_to "Sign up", '/users/sign_up' %></li>
          <li><%= link_to "Sign in", '/users/sign_in' %></li>

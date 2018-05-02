@@ -18,17 +18,16 @@ Epicodus Ruby Group Project
 - [x] As a user, I'd like to see my shopping cart updated when I make changes.
 - [x] As a user, my shopping cart should be cleared once I've completed my order.
 - [x] As a user, I'd like to see the number of items in my shopping cart and the total cost of my order in the navbar (and not just on the shopping cart page).
-- [x] As a user, I'd like to be able to see which items are on sale, along with the percentage they've been discounted.
+- [] As a user, I'd like to be able to see which items are on sale, along with the percentage they've been discounted.
 - [x] As a user, I'd like to be able to pay for my order online (see API User Stories below).
 - [x] As a user, I'd like to be able to sign up and create an account.
 - [x] As a user, I'd like to see a history of my previous orders.
-- [x] As a user, I'd like to be able to tag products to "Save for Later." These will show up on my shopping cart page but will not be in my shopping cart. I should be able to move them into my shopping cart if I want.
-- [x] As a user, I'd like to see if there are fewer than ten of an item in stock.
-- [x] As a user, I'd like to be able to see and add reviews to products.
-- [x] As a user, I'd like my current shopping cart to be associated with my account so I can log in and access my cart from any device.
-- [x] As a user, I'd like to receive a confirmation email once I've completed my order.
-- [x] As a user, I'd like to receive an email once my order has been shipped. (Only do if you work on shipping employee stories.)
-- [x] As a user, I want to add a new item to the site so I can share a work that I have experienced.
+- [] As a user, I'd like to be able to tag products to "Save for Later." These will show up on my shopping cart page but will not be in my shopping cart. I should be able to move them into my shopping cart if I want.
+- [] As a user, I'd like to see if there are fewer than ten of an item in stock.
+- [] As a user, I'd like to be able to see and add reviews to products.
+- [] As a user, I'd like my current shopping cart to be associated with my account so I can log in and access my cart from any device.
+- [] As a user, I'd like to receive a confirmation email once I've completed my order.
+- [] As a user, I'd like to receive an email once my order has been shipped. (Only do if you work on shipping employee stories.)
 
 
 ## Setup/Installation Requirements
