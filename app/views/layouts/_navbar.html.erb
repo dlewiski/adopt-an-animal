@@ -15,7 +15,7 @@
        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><span id="cartTotal"><%= link_to "Shopping Cart"  "(#{current_order.total_items})", cart_path %></span></li>
+        <li><%= render 'layouts/shoppingcart'%></li>
       </ul>
     </div>
   </div>
