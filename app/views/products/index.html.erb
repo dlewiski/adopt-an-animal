@@ -1,8 +1,7 @@
 <% @products.each do |product| %>
   <div class="product">
-  <p><%= product.name %> | <%= number_to_currency product.price %> | <%= link_to "Show Description", product_path(product), id: "#{product.name}", remote: true %><br>
-    <div id="product_description_<%= product.name %>">
-
+  <p><%= product.name %> | <%= number_to_currency product.price %> | <%= link_to "Show Description", product_path(product), id: "#{product.id}", remote: true %><br>
+    <div id="product_description_<%= product.id %>">
     </div>
     <%= form_for @order_item, remote: true do |f| %>
     <%= f.hidden_field :product_id, value: product.id %>
