@@ -1,10 +1,10 @@
 <% @products.each do |product| %>
   <div class="product">
-  <p><%= product.name %> | <%= number_to_currency product.price %> | <%= link_to "Show Description", "#", id: "#{product.name}", remote: true %><br>
-    <div class="product-description-#{product.name} hidden">
-      <%= product.description %>
+  <p><%= product.name %> | <%= number_to_currency product.price %> | <%= link_to "Show Description", product_path(product), id: "#{product.name}", remote: true %><br>
+    <div id="product_description_<%= product.name %>">
+
     </div>
-    <%= form_for @order_item do |f| %>
+    <%= form_for @order_item, remote: true do |f| %>
     <%= f.hidden_field :product_id, value: product.id %>
     <%= f.number_field :quantity, :required => true %>
     <%= f.submit "Add to cart" %>
