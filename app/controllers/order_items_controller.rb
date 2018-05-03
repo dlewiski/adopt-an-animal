@@ -3,8 +3,9 @@ class OrderItemsController < ApplicationController
   def create
     @order = current_order
     @item = @order.order_items.new(item_params)
-    @order.account_id = Account.find_by(user_id: current_user.id).id
+    # binding.pry
     @order.check_duplicate(@item)
+    @order.account_id = Account.find_by(user_id: current_user.id).id
     @order.save
     session[:order_id] = @order.id
     respond_to do |format|

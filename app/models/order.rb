@@ -13,15 +13,20 @@ class Order < ApplicationRecord
   end
 
   def check_duplicate(order_item)
-    cart_items = self.order_items
-    cart_items.each do |item|
-      if item.product_id == order_item.product_id
-        item.quantity += order_item.quantity
-        item.save
-        order_item.destroy
-      else
-        order_item.save
+    # binding.pry
+    if self.order_items.first.id?
+      cart_items = self.order_items
+      cart_items.each do |item|
+        if item.product_id == order_item.product_id
+          item.quantity += order_item.quantity
+          item.save
+          order_item.destroy
+        else
+          return self
+        end
       end
+    else
+      return self
     end
   end
 
